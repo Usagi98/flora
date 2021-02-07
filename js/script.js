@@ -1,12 +1,5 @@
-var url = window.location.href;
-if (url.indexOf("#pinus") > 0){
-     var activeTab = url.substring(url.indexOf("#pinus") + 1);
-     $('.nav[role="tablist"] a[href="#pinus'+activeTab+'"]').tab('show');
+var url = window.location.href;     
+if (url.indexOf("#") > 0){     
+    var activeTab = url.substring(url.indexOf("#") + 1);         
+    $('.nav[role="tablist"] a[href="#'+activeTab+'"]').tab('show');     
 }
-
-$('a[role="tab"]').on("click", function() {
-     var newUrl;
-     const hash = $(this).attr("href");
-     newUrl = url.split("#pinus")[0] + hash;
-     history.replaceState(null, null, newUrl);
-});
