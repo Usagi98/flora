@@ -37,6 +37,46 @@
       a, a:hover {
         text-decoration: none;
       }
+      .dropbtn {
+  background-color: #222222;
+  color: #9c9e9c;
+  padding: 16px;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: white;
+}
 
       </style>
   </head>
@@ -53,48 +93,46 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-              <a href="iglaki.html" class="dropdown-toggle" data-toggle="dropdown" >Iglaki
-                <span class="caret"></span>
-              </a>
-                <ul class="dropdown-menu">
-                   <li><a href="jodly.html">Jodły</a></li>
-                   <li><a href="modrzewie.html">Modrzewie</a></li>
-                   <li class="active"><a href="sosny.html">Sosny</a></li>
-                   <li><a href="swierki.html">Świerki</a></li>
-                </ul>
-           </li>
-           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="lisciaste.html">Drzewa liściaste
-              <span class="caret"></span>
-            </a>
-              <ul class="dropdown-menu">
-                 <li><a href="#">Brzozy</a></li>
-                 <li><a href="#">Buki</a></li>
-                 <li><a href="#">Dęby</a></li>
-                 <li><a href="#">Kasztanowce</a></li>
-                 <li><a href="#">Klony</a></li>
-                 <li><a href="#">Lipy</a></li>
-                 <li><a href="#">Olchy</a></li>
-                 <li><a href="#">Topole</a></li>
-                 <li><a href="#">Wierzby</a></li>
-              </ul>
+            <li>
+              <div class="dropdown">
+                <a href="iglaki.html"><button class="dropbtn">Iglaki</button></a>
+                <div class="dropdown-content">
+                <a href="jodly.html">Jodły</a>
+                <a href="modrzewie.html">Modrzewie</a>
+                <a href="sosny.html">Sosny</a>
+                <a href="swierki.html">Świerki</a>
+              </div>
          </li>
-         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="krzewy.html">Krzewy
-            <span class="caret"></span>
-          </a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Bzy</a></li>
-                <li><a href="#">Czeremchy</a></li>
-                <li><a href="#">Głogi</a></li>
-                <li><a href="#">Jałowce</a></li>
-                <li><a href="#">Leszczyny</a></li>
-                <li><a href="#">Róże</a></li>
-                <li><a href="#">Trzmieliny</a></li>
-            </ul>
-        </li>
+         <li>
+          <div class="dropdown">
+            <a href="lisciaste.html"><button class="dropbtn">Liściaste</button></a>
+              <div class="dropdown-content">
+                <a href="brzozy.html">Brzozy</a>
+                <a href="buki.html">Buki</a>
+                <a href="deby.html">Dęby</a>
+                <a href="kasztanowce.html">Kasztanowce</a>
+                <a href="klony.html">Klony</a>
+                <a href="lipy.html">Lipy</a>
+                <a href="olchy.html">Olchy</a>
+                <a href="topole.html">Topole</a>
+                <a href="wierzby.html">Wierzby</a>
+              </div>
+          </div>
+       </li>
+       <li>
+        <div class="dropdown">
+          <a href="krzewy.html"><button class="dropbtn">Krzewy</button></a>
+            <div class="dropdown-content">
+              <a href="bzy.html">Bzy</a>
+              <a href="czeremchy.html">Czeremchy</a>
+              <a href="glogi.html">Głogi</a>
+              <a href="jalowce.html">Jałowce</a>
+              <a href="leszczyny.html">Leszczyny</a>
+              <a href="roze.html">Róże</a>
+              <a href="trzmieliny.html">Trzmieliny</a>
+            </div>
+        </div>
+     </li>
         <li><a href="#contact">Kontakt</a></li>
           </ul>
           <form class="navbar-form navbar-right">
