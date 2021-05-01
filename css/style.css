@@ -65,7 +65,8 @@ div.col-sm-4:hover {
 
 /*------MAX-WIDTH 768-----*/
 @media screen and (max-width: 768px) {
-    .dropdown-content a { display: none;
+    .dropdown-content a { 
+        display: none;
         font-size: 30px;
        
     }
