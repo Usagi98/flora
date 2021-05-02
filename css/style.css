@@ -1,11 +1,6 @@
 @charset "utf-8";
 
 
-div.col-sm-4:hover {
-    box-shadow: 0 0 0.5em rgb(114, 114, 114);
-}
-
-
 footer {
     background-color: #f2f2f2;
     padding: 5%;
@@ -38,27 +33,39 @@ a, a:hover {
   border-radius: 0;
 }
 
-div.col-sm-4:hover {
-    box-shadow: black;
-}
 
 
 a.menuLink {
     color: #9c9e9c;
     line-height: 52px;
     padding: 10px 15px;
-  }
-  a.menuLink:hover {
+}
+a.menuLink:hover {
     color: white;
-  } 
+} 
  
-  a.menuLink {
+a.menuLink {
     color: #9c9e9c;
     line-height: 52px;
     padding: 10px 15px;
-  }
+}
+div.thumbnail {
+    padding: 0%;
+}
+div.thumbnail:hover {
+    box-shadow: 0 0 0.7em black;
+}
+div.hovering:hover {
+-webkit-box-shadow: 0px 0px 61px -33px rgb(106, 106, 107);
+-moz-box-shadow: 0px 0px 61px -33px rgba(106, 106, 107);
+box-shadow: 0px 0px 61px -33px rgba(106, 106, 107);
+border-radius: 10px 10px 10px 10px;
+background-color: rgb(231, 231, 231);
+}
 
-  
+  div.row:hover {
+    color:white;
+  }
 /*------MAX-WIDTH 768-----*/
 @media screen and (max-width: 768px) {
     a.menuLink {
