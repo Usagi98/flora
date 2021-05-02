@@ -29,7 +29,97 @@
   a, a:hover {
      text-decoration: none;
     }
-  
+    .test {
+    height: 60%;
+    line-height: 60%;
+} 
+    @media screen and (max-width: 768px) {
+    a.menuLink {
+        color: white;
+        line-height: 52px;
+        padding: 10px 15px;
+      }
+      a.menuLink:hover {
+        color: white;
+      }
+    .dropdown-content:hover { 
+        display: none;
+    }
+        
+    .dropdown {
+            position: relative;
+            display: inline-block;
+     }
+          
+    .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+    }
+          
+    .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+    }
+         
+    a.menuLink:hover {
+            color: white;
+    }
+    .dropdown-content a:hover {
+            background-color: #f1f1f1;
+    }
+        
+       
+    
+}
+@media screen and (min-width: 768px) {
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown:hover .dropdown-content  { 
+        display: block;
+    }  
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+     
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      a.menuLink:hover {
+        color: white;
+      }
+      .dropdown-content a:hover {
+          background-color: #f1f1f1
+    }
+
+}
+li.link, p {
+    font-size: 18px;
+}
+
+ a:hover{
+    color:green;
+
+}
+ul {
+    list-style-type: none;
+}
  
   </style>
   </head>
@@ -105,11 +195,25 @@
   </nav>
     <div class="container" style="margin-top: 7%; margin-bottom: 2%;">
       <div class="page-header">
-        <h1 class="text-center">Wybrana flora</h1>
+        <h1 class="text-center">Szukana strona nie istnieje</h1>
       </div>
     </div>
-    
-   </div>
+    <div class="container">
+        <div class="test" style="text-align: center;">
+                <h2><b>BŁĄD 404 <i class="far fa-grimace fa-2x"></i></b></h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container">
+            <p>Nic straconego! <br />Znajdź to czego szukasz, skorzystaj z wyszukiwarki lub przejdź na 
+                <a href="index.html">Stronę Główną</a>. Możesz również skorzystać z poniższych linkówn które doprowadzą Cię do odpowiednich sekcji :).</p>
+        </div>
+        <br /><ul>
+            <li class="link"><a href="iglaki.html"><i class="fas fa-tree"></i>    Drzewa iglaste</a></li>
+            <li class="link"><a href="lisciaste.html"><i class="fab fa-canadian-maple-leaf"></i>Drzewa liściaste</a></li>
+            <li class="link"><a href="krzewy.html"><i class="fab fa-pagelines"></i> Krzewy</a></li>
+        </ul>
+    </div>
    <footer class="container-fluid" id="contact">
      <h3 class="text-center">KONTAKT</h3>
      <div class="row">
