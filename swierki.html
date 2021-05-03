@@ -33,19 +33,29 @@
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
-      "itemListElement": [{
+      "itemListElement":
+      [
+       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Iglaki",
-        "item": "https://usagi98.github.io/flora/iglaki.html"
-      },{
+        "item":
+        {
+         "@id": "https://usagi98.github.io/flora/iglaki.html",
+         "name": "Iglaki"
+         }
+       },
+       {
         "@type": "ListItem",
-        "position": 2,
-        "name": "Świerki",
-        "item": "https://usagi98.github.io/flora/swierki.html"
-      }]
-    }
-    </script>
+       "position": 2,
+       "item":
+        {
+          "@id": "https://usagi98.github.io/flora/swierki.html",
+          "name": "Świerki"
+        }
+       }
+      ]
+     }
+     </script>
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
