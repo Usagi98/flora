@@ -182,9 +182,8 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+@media only screen and (max-width: 494px) {
+  
 /*------MAX-WIDTH 768-----*/
 @media screen and (max-width: 768px) {
     a.menuLink {
@@ -227,8 +226,16 @@ img {
             background-color: #f1f1f1;
     }
         
-       
-    
+    ul.breadcrumb li {
+      display: inline;
+      font-size: 12px;
+    } 
+    .prev, .next {font-size: 11px}
+  .text {
+    font-size: 11px;
+    width: 50%;
+  }
+}
 }
 @media screen and (min-width: 768px) {
     .dropdown {
